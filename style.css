@@ -1,0 +1,494 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F6F6;
+  position: relative;
+}
+
+.header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.header .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .headerLogo {
+  display: block;
+  width: 210px;
+  height: 38px;
+  background: url("img/main.svg") 0 50% no-repeat;
+  background-size: contain;
+}
+.header .search {
+  padding: 10px;
+  flex: 1;
+}
+.header .search form {
+  background: #f5f5f5;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .search form input {
+  border: 0;
+  background: transparent;
+  padding: 10px 10px;
+  outline: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+.header .search form .searchLogo {
+  background-image: url("img/search.svg");
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+.header .login .register {
+  display: inline-block;
+  font-weight: 700;
+  padding: 3px 8px 3px 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7E7E7E;
+  font-size: 14px;
+  border-right: 1px solid #dbdbdb;
+}
+.header .login .signIn {
+  font-weight: 700;
+  padding: 3px 8px 3px 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7E7E7E;
+  font-size: 14px;
+}
+.header .headerButton button {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  color: #333;
+  display: inline-block;
+  padding: 13px 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.responsiveHeader {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 120px;
+}
+.container .content {
+  margin-top: 20px;
+  background-color: white;
+  margin-bottom: 13px;
+  border-radius: 20px;
+  padding: 40px;
+}
+.container .content .firstTitle h1 {
+  font-size: 32px;
+  line-height: 40px;
+  word-break: break-word;
+  color: #333;
+}
+.container .content .firstTitle p {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #333;
+}
+.container .content .firstTitle p span {
+  font-weight: bolder;
+  color: #333;
+}
+.container .content .secondTitle h2 {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #333;
+}
+.container .content .secondTitle p {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #333;
+}
+.container .content .thirdTitle h2 {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #333;
+}
+.container .content .thirdTitle p {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #333;
+}
+.container .content .cookies {
+  margin-top: 25px;
+}
+.container .content .cookies u {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-size: 18px;
+  color: #333;
+}
+.container .content .cookies p {
+  font-size: 18px;
+  color: #333;
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 6px;
+  margin-top: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+.container .content .cookies h3 {
+  color: #333;
+  font-size: 18px;
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 6px;
+  margin-top: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  padding-left: 15px;
+}
+.container .content .cookies .links {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+.container .content .cookies .links p {
+  margin: 0;
+  padding-bottom: 0;
+  color: #333;
+  font-size: 18px;
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  line-height: 28px;
+  margin-top: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+.container .content .cookies .links span {
+  color: #333;
+  font-size: 18px;
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  line-height: 28px;
+  margin-top: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  vertical-align: middle;
+  padding-bottom: 0;
+}
+.container .content .cookies .links a {
+  vertical-align: middle;
+  font-size: 18px;
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  line-height: 28px;
+  margin-top: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #1c47a1;
+  text-decoration: underline;
+}
+.container .content .cookies .links .linksLine {
+  margin-top: 30px;
+}
+.container .content .cookies span {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+.container .content .titles {
+  margin-top: 45px;
+}
+.container .content .titles h1 {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  font-size: 23px;
+  color: #333;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+.container .content .titles p {
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 28px;
+  padding-bottom: 6px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+.container .content .titles a {
+  vertical-align: middle;
+  font-size: 18px;
+  font-family: "PT Serif", "Roboto Slab", Georgia, serif;
+  line-height: 28px;
+  margin-top: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-line-break: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #1c47a1;
+  text-decoration: underline;
+}
+.container .news {
+  margin-left: 30px;
+}
+.container .news h3 {
+  font-weight: 500;
+  color: #a7a7a7;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-family: "Source Sans Pro", "Roboto Slab", Georgia;
+  font-size: 20px;
+  line-height: 24px;
+}
+.container .logosBlock {
+  background-color: white;
+  margin-bottom: 13px;
+  border-radius: 20px;
+  padding: 40px;
+}
+.container .logosBlock .logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .logosBlock .logos div {
+  display: block;
+  flex: 1;
+  height: 40px;
+  min-width: 68px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  position: relative;
+}
+.container .logosBlock .logos .timeLogo {
+  background-image: url("img/time.png");
+}
+.container .logosBlock .logos .cbsLogo {
+  background-image: url("img/cbs.png");
+}
+.container .logosBlock .logos .mediumLogo {
+  background-image: url("img/medium.png");
+}
+.container .logosBlock .logos .cbcLogo {
+  background-image: url("img/cbc.png");
+}
+.container .logosBlock .logos .aarpLogo {
+  background-image: url("img/aarp.png");
+}
+.container .logosBlock .logos .lifehackerLogo {
+  background-image: url("img/lifehacker.png");
+}
+.container .logosBlock .logos .pcLogo {
+  background-image: url("img/pc.png");
+}
+.container .footer {
+  margin-top: 25px;
+}
+.container .footer .footerlist {
+  text-align: center;
+}
+.container .footer .footerlist .letters {
+  padding-top: 15px;
+}
+.container .footer .footerlist .letters a {
+  border-right: none;
+}
+.container .footer .footerlist a {
+  font-size: 14px;
+  color: #7e7e7e;
+  border-right: 1px solid #7e7e7e;
+  padding-right: 2px;
+}
+.container .footer .footerlist p {
+  font-size: 14px;
+  color: #7e7e7e;
+  margin: 0;
+}
+.container .footer .footerlist .socialLogos .facebookLogo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #dedede;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: 50%;
+  background-position: center;
+  background-image: url("img/facebook.svg");
+  margin: 5px;
+}
+.container .footer .footerlist .socialLogos .twitterLogo {
+  display: inline-block;
+  width: 28px;
+  height: 32px;
+  background-color: #dedede;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: 50%;
+  background-position: center;
+  background-image: url("img/twitter.svg");
+  margin: 5px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .header {
+    display: none;
+  }
+
+  .responsiveHeader {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 25px;
+  }
+  .responsiveHeader .container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .responsiveHeader .headerLogo {
+    background-image: url("img/main.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 35px;
+    height: 45px;
+    background-size: cover;
+    background-position: 0 50%;
+    margin-left: 10px;
+  }
+  .responsiveHeader button {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    color: #333;
+    display: inline-block;
+    padding: 13px 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    flex: 1;
+    margin: 0 10px !important;
+  }
+  .responsiveHeader .searchLogo {
+    background-image: url("img/search.svg");
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+  .responsiveHeader .iconLogo {
+    padding: 10px;
+    background-image: url("img/icon.svg");
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-size: 60px 60px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .container {
+    margin-top: 110px;
+  }
+  .container .content {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
